@@ -6,7 +6,7 @@ var items = [1,4,5,9,0,-1,5];
 
 //solution using if-else
 
-let counter =0;
+var counter = 0;
 
 items.forEach((num) =>{
   var reminder = Math.abs(num%2);
@@ -16,3 +16,16 @@ items.forEach((num) =>{
 });
 
 console.log(counter);
+
+//solution without using if-else
+
+//reset counter
+counter=0;
+
+items.forEach((num) =>{
+  var reminder = Math.abs(num%2);
+  counter+=reminder;
+});
+
+console.log(counter);
+

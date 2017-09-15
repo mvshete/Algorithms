@@ -10,3 +10,11 @@ items.forEach(function (num) {
     }
 });
 console.log(counter);
+//solution without using if-else
+//reset counter
+counter = 0;
+items.forEach(function (num) {
+    var reminder = Math.abs(num % 2);
+    counter += reminder;
+});
+console.log(counter);
