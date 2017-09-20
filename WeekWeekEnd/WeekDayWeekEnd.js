@@ -12,7 +12,7 @@ var WeekEndOrWeekDay = function (inputDate) {
 console.log(WeekEndOrWeekDay(new Date("09/15/2017")));
 console.log(WeekEndOrWeekDay(new Date("09/17/2017")));
 //soution without using if-else
-var weekendOrWeekday = function (inputDate) {
+var weekendOrWeekday1 = function (inputDate) {
     var day = inputDate.getDay();
     var labels = {
         0: "Week End",
@@ -21,4 +21,5 @@ var weekendOrWeekday = function (inputDate) {
     };
     return labels[day] || labels["default"];
 };
-console.log(weekendOrWeekday(new Date()));
+console.log(weekendOrWeekday1(new Date("09/15/2017")));
+console.log(weekendOrWeekday1(new Date("09/17/2017")));

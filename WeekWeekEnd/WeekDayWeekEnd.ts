@@ -16,7 +16,7 @@ console.log(WeekEndOrWeekDay(new Date("09/15/2017")));
 console.log(WeekEndOrWeekDay(new Date("09/17/2017")));
 
 //soution without using if-else
-const weekendOrWeekday = inputDate => {
+const weekendOrWeekday1 = inputDate => {
   const day = inputDate.getDay();
   const labels = {
     0: "Week End",
@@ -25,4 +25,5 @@ const weekendOrWeekday = inputDate => {
   };
   return labels[day] || labels["default"];
 };
-console.log(weekendOrWeekday(new Date()));
+console.log(weekendOrWeekday1(new Date("09/15/2017")));
+console.log(weekendOrWeekday1(new Date("09/17/2017")));
